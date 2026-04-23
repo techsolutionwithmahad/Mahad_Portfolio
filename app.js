@@ -106,11 +106,11 @@ const siteData = {
       "A curated showcase of security research and marketing campaigns.",
     items: [
       {
-        name: "Enterprise Vulnerability Assessment",
-        category: "Security",
-        desc: "Full-scope penetration test for a fintech SaaS platform, uncovering 12 critical vulnerabilities including authentication bypasses and IDOR flaws.",
-        tech: ["Burp Suite", "Nuclei", "Go", "Python"],
-        link: "projects/Enterprise Vulnerability Assessment/Assessment.html",
+        name: "Rapid Meta Ads Optimization",
+        category: "Marketing",
+        desc: "Managed a highly optimized 4-day Meta Ads blitz campaign, generating nearly 20,000 impressions and reaching over 18,900 unique accounts with highly efficient ad spend.",
+        tech: ["Meta Ads", "Rapid Scaling", "Budget Optimization"],
+        link: "projects/meta-ads-optimization/index.html",
       },
       {
         name: "E-Commerce Growth Campaign",
