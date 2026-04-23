@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Details — Mahad Ali</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" href="../../style.css" />
+</head>
+
+<body>
+    <header id="header" class="header header--scrolled">
+        <div class="header__inner container">
+            <a href="../../index.html" class="header__logo" id="nav-logo-subpage">Mahad.</a>
+            <nav class="header__nav">
+                <ul class="header__links">
+                    <li><a href="../../index.html#work">← Back to Portfolio</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="section" style="padding-top: 140px; min-height: 70vh;">
+        <div class="container" style="max-width: 800px;">
+
+            <p class="section__tag">Case Study</p>
+
+            <h1 class="section__title" id="template-project-name">Loading Project...</h1>
+
+            <p class="section__subtitle" style="max-width: 100%; font-size: 1.1rem; margin-bottom: 40px;">
+                Write your deep-dive technical writeup or campaign strategy here. You can add as many paragraphs, code
+                blocks, or data points as you need for this specific project.
+            </p>
+
+            <div class="project-card__img"
+                style="border-radius: var(--radius); margin-bottom: 60px; height: auto; aspect-ratio: 16/9;">
+                <img src="https://via.placeholder.com/800x450/16161f/6c63ff?text=Project+Screenshot+or+Architecture+Diagram"
+                    alt="Project Visual">
+            </div>
+
+            <div style="padding-left: 20px; border-left: 3px solid var(--accent); margin-bottom: 60px;">
+                <p style="color: var(--text-muted); font-style: italic; font-size: 1.05rem;">
+                    Thanks for reading this case study. If you're dealing with similar challenges or need a fresh
+                    perspective on your infrastructure, let's talk.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="contact section" style="padding-top: 0;">
+        <div class="container" style="max-width: 800px;">
+            <div class="contact__card">
+                <p class="section__tag" id="template-contact-tag"></p>
+                <h2 class="contact__title" id="template-contact-title"></h2>
+                <p class="contact__subtitle" id="template-contact-subtitle"></p>
+                <div class="contact__links" id="template-contact-links"></div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__inner container" style="justify-content: center;">
+            <p class="footer__copy" id="template-footer-copy"></p>
+        </div>
+    </footer>
+
+    <script src="../../app.js"></script>
+
+    <script>
+        (function () {
+            "use strict";
+
+            /* ────────────────────────────────────────────────────────
+               CHANGE THIS NUMBER FOR EACH FOLDER
+               0 = First project in app.js, 1 = Second project, etc.
+               ──────────────────────────────────────────────────────── */
+            const projectIndex = 0;
+
+            // Grab the specific project from your existing app.js
+            const targetProject = siteData.projects.items[projectIndex];
+
+            // Inject Project Name
+            const nameEl = document.getElementById("template-project-name");
+            if (nameEl && targetProject) nameEl.textContent = targetProject.name;
+
+            // Inject Contact Section globally from app.js
+            document.getElementById("template-contact-tag").textContent = siteData.contact.tag;
+            document.getElementById("template-contact-title").textContent = siteData.contact.title;
+            document.getElementById("template-contact-subtitle").textContent = siteData.contact.subtitle;
+            document.getElementById("template-footer-copy").textContent = siteData.footer.copy;
+
+            // Inject Contact Links
+            const linksContainer = document.getElementById("template-contact-links");
+            if (linksContainer) {
+                linksContainer.innerHTML = siteData.contact.links.map(l =>
+                    `<a href="${l.href}" class="contact__link-item" target="_blank" rel="noopener">${l.label}</a>`
+                ).join("");
+            }
+        })();
+    </script>
+</body>
+
+</html>

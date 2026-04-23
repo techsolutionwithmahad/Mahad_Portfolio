@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" id="meta-description" content="" />
+  <title id="page-title"></title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header id="header" class="header">
+    <div class="header__inner container">
+      <a href="#" class="header__logo" id="nav-logo"></a>
+      <button class="header__toggle" id="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="header__nav" id="nav-menu">
+        <ul class="header__links" id="nav-links"></ul>
+      </nav>
+    </div>
+  </header>
+  <div class="nav-overlay" id="nav-overlay"></div>
+
+  <section id="hero" class="hero">
+    <div class="hero__inner container">
+      <p class="hero__tag" id="hero-tag"></p>
+      <h1 class="hero__headline" id="hero-headline"></h1>
+      <p class="hero__subtext" id="hero-subtext"></p>
+      <div class="hero__actions">
+        <a href="#contact" class="btn btn--primary" id="hero-cta"></a>
+        <a href="#work" class="btn btn--ghost" id="hero-cta-secondary"></a>
+      </div>
+      <div class="hero__stats" id="hero-stats"></div>
+    </div>
+    <div class="hero__glow"></div>
+  </section>
+
+  <section id="about" class="about section">
+    <div class="container">
+      <p class="section__tag" id="about-tag"></p>
+      <h2 class="section__title" id="about-title"></h2>
+      <div class="about__grid">
+        <div class="about__text" id="about-text"></div>
+        <div class="about__details" id="about-details"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="services section">
+    <div class="container">
+      <p class="section__tag" id="services-tag"></p>
+      <h2 class="section__title" id="services-title"></h2>
+      <p class="section__subtitle" id="services-subtitle"></p>
+      <div class="services__grid" id="services-grid"></div>
+    </div>
+  </section>
+
+  <section id="work" class="work section">
+    <div class="container">
+      <p class="section__tag" id="work-tag"></p>
+      <h2 class="section__title" id="work-title"></h2>
+      <p class="section__subtitle" id="work-subtitle"></p>
+      <div class="work__grid" id="work-grid"></div>
+    </div>
+  </section>
+
+  <section id="testimonials" class="testimonials section">
+    <div class="container">
+      <p class="section__tag" id="testimonials-tag"></p>
+      <h2 class="section__title" id="testimonials-title"></h2>
+      <div class="testimonials__grid" id="testimonials-grid"></div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact section">
+    <div class="container">
+      <div class="contact__card">
+        <p class="section__tag" id="contact-tag"></p>
+        <h2 class="contact__title" id="contact-title"></h2>
+        <p class="contact__subtitle" id="contact-subtitle"></p>
+        <div class="contact__links" id="contact-links"></div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="footer" class="footer">
+    <div class="footer__inner container">
+      <p class="footer__copy" id="footer-copy"></p>
+      <div class="footer__socials" id="footer-socials"></div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
