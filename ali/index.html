@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A minimalist journal exploring design, code, and the craft of simplicity." />
+  <title>The Quiet Journal</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ═══ HEADER ═══ -->
+  <header class="site-header">
+    <div class="container">
+      <h1 class="site-title" id="site-title"></h1>
+      <p class="site-tagline" id="site-tagline"></p>
+    </div>
+  </header>
+
+  <!-- ═══ MAIN ═══ -->
+  <main class="container">
+    <nav class="filter-bar" id="filter-bar" aria-label="Filter posts by category"></nav>
+    <section class="posts-grid" id="posts-grid" aria-label="Blog posts"></section>
+  </main>
+
+  <!-- ═══ FOOTER ═══ -->
+  <footer class="site-footer">
+    <div class="container">
+      &copy; <span id="footer-year"></span> <span id="footer-author"></span>. Crafted with <span>&hearts;</span> and intention.
+    </div>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
