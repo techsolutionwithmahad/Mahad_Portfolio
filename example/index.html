@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Naeem Electronics — Premium Electronics & Easy Installments</title>
+  <meta name="description" content="Shop the latest smartphones, laptops & accessories with easy installment plans. 0% markup, genuine products, and trusted service at Naeem Electronics.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo">Naeem<span>Electronics</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li class="mega-menu-trigger">
+          <a href="shop.html">Categories ▾</a>
+          <div class="mega-menu" id="megaMenu"></div>
+        </li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="installment-guide.html">Installment Guide</a></li>
+        <li><a href="cart.html">Cart</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="nav-action-btn" id="searchToggle" aria-label="Search">🔍</button>
+        <button class="nav-action-btn" aria-label="Wishlist">♡</button>
+        <a href="cart.html" class="nav-action-btn" aria-label="Cart">🛒<span class="nav-badge" id="cartCount">0</span></a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">☰</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero" id="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <div class="hero-badge"><span class="dot"></span> New Arrivals 2026</div>
+          <h1>Next-Gen Tech,<br><span class="gradient-text">Easy Installments</span></h1>
+          <p class="hero-desc">Get the latest flagship smartphones and premium electronics with 0% markup installment plans. Pay in easy monthly installments — no hidden fees.</p>
+          <div class="hero-actions">
+            <a href="shop.html" class="btn btn-primary">Shop Now →</a>
+            <a href="installment-guide.html" class="btn btn-outline">How EMI Works</a>
+          </div>
+          <div class="hero-stats">
+            <div class="hero-stat"><div class="num">10K+</div><div class="label">Happy Customers</div></div>
+            <div class="hero-stat"><div class="num">500+</div><div class="label">Products</div></div>
+            <div class="hero-stat"><div class="num">0%</div><div class="label">Markup EMI</div></div>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?w=600&h=700&fit=crop" alt="Latest Smartphone" class="hero-phone">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FEATURED CATEGORIES ===== -->
+  <section class="section" id="categories">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Browse</span>
+        <h2>Featured Categories</h2>
+        <p>Find exactly what you're looking for across our wide range of electronics</p>
+      </div>
+      <div class="cat-grid" id="categoriesGrid"></div>
+    </div>
+  </section>
+
+  <!-- ===== BEST DEALS ON INSTALLMENTS ===== -->
+  <section class="section" style="background: var(--bg-secondary);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">🔥 Limited Time</span>
+        <h2>Best Deals on Installments</h2>
+        <p>Grab these amazing deals with flexible monthly payment plans</p>
+      </div>
+      <div class="carousel-wrapper">
+        <div class="carousel-track" id="dealsCarousel"></div>
+        <div class="carousel-nav">
+          <button class="carousel-btn" id="prevDeal" aria-label="Previous">←</button>
+          <button class="carousel-btn" id="nextDeal" aria-label="Next">→</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FEATURED PRODUCTS ===== -->
+  <section class="section" id="featured">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">⭐ Handpicked</span>
+        <h2>Featured Products</h2>
+        <p>Our top picks for you — premium quality, unbeatable prices</p>
+      </div>
+      <div class="products-grid" id="featuredGrid"></div>
+    </div>
+  </section>
+
+  <!-- ===== TRUST BADGES ===== -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Why Choose Us</span>
+        <h2>Shop With Confidence</h2>
+      </div>
+      <div class="trust-grid">
+        <div class="trust-card">
+          <div class="trust-icon">🔒</div>
+          <h3>Secure Payments</h3>
+          <p>All transactions are encrypted and secured. Multiple payment options available.</p>
+        </div>
+        <div class="trust-card">
+          <div class="trust-icon">📋</div>
+          <h3>Easy EMI Plans</h3>
+          <p>Flexible installment plans from 3 to 24 months with 0% markup on select products.</p>
+        </div>
+        <div class="trust-card">
+          <div class="trust-icon">✅</div>
+          <h3>100% Genuine Products</h3>
+          <p>Every product comes with official warranty and authenticity guarantee.</p>
+        </div>
+        <div class="trust-card">
+          <div class="trust-icon">🚚</div>
+          <h3>Fast Delivery</h3>
+          <p>Free delivery across Pakistan. Same-day delivery available in select cities.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== QUICK VIEW MODAL ===== -->
+  <div class="modal-overlay" id="quickViewModal">
+    <div class="modal">
+      <button class="modal-close" id="modalClose">✕</button>
+      <div class="modal-grid">
+        <div class="modal-img"><img id="modalImg" src="" alt="Product"></div>
+        <div class="modal-body" id="modalBody"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <div class="footer-logo">Naeem Electronics</div>
+          <p>Your trusted destination for premium electronics with the most flexible installment plans in Pakistan. Quality products, honest prices, and customer-first service since 2010.</p>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop All</a></li>
+            <li><a href="installment-guide.html">Installment Guide</a></li>
+            <li><a href="cart.html">My Cart</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Categories</h4>
+          <ul>
+            <li><a href="shop.html?cat=mobiles">Mobile Phones</a></li>
+            <li><a href="shop.html?cat=laptops">Laptops</a></li>
+            <li><a href="shop.html?cat=tablets">Tablets</a></li>
+            <li><a href="shop.html?cat=accessories">Accessories</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="#">📍 Main Market, Lahore</a></li>
+            <li><a href="tel:+923001234567">📞 0300-1234567</a></li>
+            <li><a href="mailto:info@naeemelectronics.pk">✉ info@naeemelectronics.pk</a></li>
+            <li><a href="#">💬 WhatsApp Us</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Naeem Electronics. All rights reserved.</p>
+        <p>Designed with ⚡ for the best shopping experience</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

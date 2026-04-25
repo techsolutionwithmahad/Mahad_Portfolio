@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Details — Naeem Electronics</title>
+  <meta name="description" content="View product details, specs, reviews, and calculate your monthly installment at Naeem Electronics.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo">Naeem<span>Electronics</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li class="mega-menu-trigger">
+          <a href="shop.html">Categories ▾</a>
+          <div class="mega-menu" id="megaMenu"></div>
+        </li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="installment-guide.html">Installment Guide</a></li>
+        <li><a href="cart.html">Cart</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="nav-action-btn" id="searchToggle" aria-label="Search">🔍</button>
+        <button class="nav-action-btn" aria-label="Wishlist">♡</button>
+        <a href="cart.html" class="nav-action-btn" aria-label="Cart">🛒<span class="nav-badge" id="cartCount">0</span></a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">☰</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== PRODUCT DETAIL ===== -->
+  <section class="section product-detail">
+    <div class="container">
+      <!-- Breadcrumb -->
+      <div style="margin-bottom: 24px; font-size: 0.85rem; color: var(--text-muted);">
+        <a href="index.html" style="color: var(--accent);">Home</a> &nbsp;/&nbsp;
+        <a href="shop.html" style="color: var(--accent);">Shop</a> &nbsp;/&nbsp;
+        <span id="breadcrumbProduct">Product</span>
+      </div>
+
+      <div class="pd-grid">
+        <!-- Gallery -->
+        <div class="pd-gallery">
+          <div class="pd-main-img"><img id="mainImage" src="" alt="Product Image"></div>
+          <div class="pd-thumbs" id="thumbsContainer"></div>
+        </div>
+
+        <!-- Product Info -->
+        <div class="pd-info">
+          <div class="pd-brand" id="pdBrand"></div>
+          <h1 id="pdName"></h1>
+          <div class="pd-rating" id="pdRating"></div>
+
+          <div class="pd-price-block">
+            <span class="pd-price" id="pdPrice"></span>
+            <span class="pd-old-price" id="pdOldPrice"></span>
+            <span class="pd-save" id="pdSave"></span>
+          </div>
+
+          <p class="pd-desc" id="pdDesc"></p>
+
+          <!-- EMI Calculator -->
+          <div class="emi-calculator" id="emiCalc">
+            <h3>📋 Installment Calculator</h3>
+            <div class="emi-field">
+              <label>Down Payment: <strong id="dpDisplay"></strong></label>
+              <input type="range" class="emi-slider" id="dpSlider" min="0" max="100000" step="5000">
+            </div>
+            <div class="emi-field">
+              <label>Select Tenure</label>
+              <div class="emi-tenure-btns" id="tenureBtns"></div>
+            </div>
+            <div class="emi-result">
+              <div class="emi-monthly" id="emiMonthly"></div>
+              <div class="emi-monthly-label">per month</div>
+              <div class="emi-breakdown">
+                <div class="item"><div class="val" id="emiTotal"></div><div class="lbl">Total Price</div></div>
+                <div class="item"><div class="val" id="emiDown"></div><div class="lbl">Down Payment</div></div>
+                <div class="item"><div class="val" id="emiRemaining"></div><div class="lbl">Remaining</div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Add to Cart -->
+          <div class="card-actions" style="margin-bottom: 24px;">
+            <button class="btn btn-primary" id="addToCartBtn" style="flex:2;">🛒 Add to Cart</button>
+            <button class="btn btn-outline" style="flex:1;">♡ Wishlist</button>
+          </div>
+
+          <!-- Tabs: Specs / Reviews -->
+          <div class="tabs">
+            <button class="tab-btn active" data-tab="specs">Specifications</button>
+            <button class="tab-btn" data-tab="reviews">Reviews</button>
+          </div>
+          <div class="tab-content active" id="tab-specs">
+            <table class="specs-table" id="specsTable"></table>
+          </div>
+          <div class="tab-content" id="tab-reviews">
+            <div id="reviewsContainer" style="color: var(--text-muted); padding: 20px 0;">
+              <div style="display:flex;align-items:center;gap:12px;margin-bottom:20px;">
+                <div style="font-size:2.5rem;font-weight:800;" id="avgRating"></div>
+                <div><div class="stars" id="avgStars"></div><div style="font-size:0.8rem;color:var(--text-dim);margin-top:4px;" id="totalReviews"></div></div>
+              </div>
+              <div id="reviewsList"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Related Products -->
+      <div style="margin-top: 80px;">
+        <div class="section-header">
+          <span class="section-tag">You May Also Like</span>
+          <h2>Related Products</h2>
+        </div>
+        <div class="products-grid" id="relatedGrid"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <div class="footer-logo">Naeem Electronics</div>
+          <p>Your trusted destination for premium electronics with the most flexible installment plans in Pakistan.</p>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul><li><a href="index.html">Home</a></li><li><a href="shop.html">Shop</a></li><li><a href="installment-guide.html">Installment Guide</a></li></ul>
+        </div>
+        <div>
+          <h4>Categories</h4>
+          <ul><li><a href="shop.html?cat=mobiles">Mobiles</a></li><li><a href="shop.html?cat=laptops">Laptops</a></li><li><a href="shop.html?cat=accessories">Accessories</a></li></ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul><li><a href="#">📍 Main Market, Lahore</a></li><li><a href="tel:+923001234567">📞 0300-1234567</a></li></ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Naeem Electronics. All rights reserved.</p>
+        <p>Designed with ⚡</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/product-detail.js"></script>
+</body>
+</html>
