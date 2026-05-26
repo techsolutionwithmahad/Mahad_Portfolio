@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --brown: #4A3B32;
+    --cream: #F5F0E6;
+    --accent: #C27A5B;
+    --text: #2C241B;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: var(--cream);
+    color: var(--text);
+    line-height: 1.6;
+}
+
+h1, h2, h3, .logo {
+    font-family: 'Libre Baskerville', serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 5%;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--brown);
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--text);
+    margin-left: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: var(--accent);
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    padding: 4rem 5%;
+    gap: 4rem;
+    min-height: 80vh;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    color: var(--brown);
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2.5rem;
+    color: #555;
+}
+
+.btn {
+    display: inline-block;
+    background-color: var(--brown);
+    color: var(--cream);
+    padding: 1rem 2.5rem;
+    text-decoration: none;
+    font-family: 'Libre Baskerville', serif;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background-color: var(--accent);
+}
+
+.hero-image {
+    flex: 1;
+    position: relative;
+}
+
+.hero-image::before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    width: 100%;
+    height: 100%;
+    border: 2px solid var(--accent);
+    z-index: -1;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    box-shadow: 10px 10px 30px rgba(0,0,0,0.1);
+}
+
+.featured-menu {
+    padding: 6rem 5%;
+    background-color: #fff;
+    text-align: center;
+}
+
+.featured-menu h2 {
+    font-size: 2.5rem;
+    color: var(--brown);
+    margin-bottom: 4rem;
+}
+
+.coffee-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.coffee-card {
+    background: var(--cream);
+    padding: 2rem;
+    border: 1px solid #e8e3d8;
+    transition: transform 0.3s;
+}
+
+.coffee-card:hover {
+    transform: translateY(-10px);
+}
+
+.coffee-card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1.5rem;
+    border: 4px solid #fff;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.coffee-card h3 {
+    font-size: 1.5rem;
+    color: var(--brown);
+    margin-bottom: 1rem;
+}
+
+.coffee-card p {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 1.5rem;
+}
+
+.price {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--accent);
+}

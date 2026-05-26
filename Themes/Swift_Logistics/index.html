@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Swift Logistics</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">SWIFT LOGISTICS</div>
+    <nav><a>Freight</a><a>Air</a><a>Ocean</a></nav>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <h1>POWERING GLOBAL TRADE</h1>
+        <div class="tracking-widget">
+          <h2>Track Your Shipment</h2>
+          <div class="input-group">
+            <input type="text" id="trackId" placeholder="Tracking Number">
+            <button id="trackBtn">TRACK</button>
+          </div>
+          <div class="progress-container" id="progressContainer">
+            <div class="progress-bar" id="progressBar"></div>
+            <div class="nodes">
+              <span class="active">Dispatched</span>
+              <span class="active">In Transit</span>
+              <span>Delivered</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

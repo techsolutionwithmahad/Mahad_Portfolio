@@ -1,0 +1,24 @@
+:root { --red: #d90429; --black: #111; --white: #fff; }
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Roboto Condensed', sans-serif; background: #edf2f4; color: var(--black); }
+header { background: var(--black); color: var(--white); display: flex; justify-content: space-between; padding: 1.5rem 3rem; text-transform: uppercase; font-weight: 700; }
+.logo { font-size: 1.8rem; letter-spacing: 2px; color: var(--red); }
+nav a { margin-left: 2rem; cursor: pointer; }
+nav a:hover { color: var(--red); }
+.hero { height: calc(100vh - 75px); background: linear-gradient(rgba(17,17,17,0.7), rgba(17,17,17,0.7)), url('https://images.unsplash.com/photo-1586528116311-ad8ed7c663c0?auto=format&fit=crop&q=80') center/cover; display: flex; align-items: center; justify-content: center; }
+.hero-content { text-align: center; width: 100%; max-width: 800px; }
+.hero h1 { font-size: 4rem; color: var(--white); margin-bottom: 3rem; letter-spacing: 1px; }
+.tracking-widget { background: var(--white); padding: 3rem; border-radius: 8px; box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
+.tracking-widget h2 { margin-bottom: 1.5rem; text-transform: uppercase; color: var(--black); }
+.input-group { display: flex; margin-bottom: 2rem; }
+.input-group input { flex: 1; padding: 1rem; border: 2px solid #ccc; font-size: 1.1rem; outline: none; text-transform: uppercase; }
+.input-group input:focus { border-color: var(--red); }
+.input-group button { padding: 1rem 2rem; background: var(--red); color: var(--white); border: none; font-size: 1.1rem; font-weight: 700; cursor: pointer; transition: background 0.3s; }
+.input-group button:hover { background: #ef233c; }
+.progress-container { display: none; position: relative; padding-top: 2rem; }
+.progress-container.show { display: block; }
+.progress-bar { position: absolute; top: 30px; left: 10%; width: 80%; height: 4px; background: #ccc; z-index: 1; }
+.progress-bar::after { content: ''; position: absolute; top: 0; left: 0; width: 50%; height: 100%; background: var(--red); transition: width 1s; }
+.nodes { display: flex; justify-content: space-between; position: relative; z-index: 2; }
+.nodes span { background: var(--white); padding: 0.5rem; font-weight: 700; font-size: 0.9rem; color: #888; }
+.nodes span.active { color: var(--red); }

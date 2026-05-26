@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motion Cut | Video Production</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="video-container">
+        <video autoplay muted loop id="bg-video">
+            <source src="https://assets.mixkit.co/videos/preview/mixkit-set-of-plateaus-seen-from-the-sky-in-a-sunset-26070-large.mp4" type="video/mp4">
+        </video>
+        <div class="overlay"></div>
+    </div>
+
+    <header>
+        <div class="logo">MOTION_CUT</div>
+        <nav>
+            <a href="#">Showreel</a>
+            <a href="#">Projects</a>
+            <a href="#">About</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>CINEMATIC</h1>
+            <h2>VISION</h2>
+            <p>Award-winning video production for brands that matter.</p>
+            <button class="play-reel" id="play-btn">
+                <span class="icon">▶</span> Watch Showreel
+            </button>
+        </section>
+        
+        <div class="video-modal" id="modal">
+            <div class="modal-content">
+                <span class="close-btn" id="close-btn">×</span>
+                <div class="placeholder-vid">
+                    <p>Playing Showreel...</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

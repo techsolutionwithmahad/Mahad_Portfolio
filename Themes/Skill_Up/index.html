@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skill Up | Online Courses</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo">Skill<span>Up</span></div>
+        <nav class="side-nav">
+            <a href="#" class="active">Dashboard</a>
+            <a href="#">My Courses</a>
+            <a href="#">Catalog</a>
+            <a href="#">Certificates</a>
+            <a href="#">Settings</a>
+        </nav>
+        <div class="user-profile">
+            <div class="avatar">U</div>
+            <div class="user-info">
+                <span class="name">User Name</span>
+                <span class="level">Level 5 Scholar</span>
+            </div>
+        </div>
+    </div>
+
+    <main class="dashboard">
+        <header>
+            <div class="search-bar">
+                <input type="text" placeholder="Search courses, skills, or mentors...">
+            </div>
+            <div class="header-actions">
+                <button class="notif-btn">🔔</button>
+            </div>
+        </header>
+
+        <section class="learning-progress">
+            <h2>Continue Learning</h2>
+            <div class="course-card active-course">
+                <div class="course-vid-placeholder">▶</div>
+                <div class="course-details">
+                    <span class="badge">UI/UX Design</span>
+                    <h3>Advanced Wireframing & Prototyping</h3>
+                    <p>Module 4: Interactive Components</p>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar" style="width: 65%;"></div>
+                    </div>
+                    <span class="progress-text">65% Completed</span>
+                </div>
+                <button class="resume-btn">Resume</button>
+            </div>
+        </section>
+
+        <section class="course-catalog">
+            <h2>Recommended for You</h2>
+            <div class="grid">
+                <div class="catalog-card">
+                    <div class="card-img" style="background: #4facfe;">&lt;/&gt;</div>
+                    <div class="card-info">
+                        <h3>Full-Stack Web Dev</h3>
+                        <p>120 hours • 4.8 ⭐</p>
+                    </div>
+                </div>
+                <div class="catalog-card">
+                    <div class="card-img" style="background: #ff0844;">📈</div>
+                    <div class="card-info">
+                        <h3>Data Science Bootcamp</h3>
+                        <p>85 hours • 4.9 ⭐</p>
+                    </div>
+                </div>
+                <div class="catalog-card">
+                    <div class="card-img" style="background: #f83600;">📱</div>
+                    <div class="card-info">
+                        <h3>Mobile App Dev</h3>
+                        <p>60 hours • 4.7 ⭐</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

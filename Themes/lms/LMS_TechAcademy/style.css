@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&display=swap');
+
+:root {
+    --bg: #0d1117;
+    --primary: #39d353;
+    --text: #c9d1d9;
+    --card-bg: #161b22;
+    --border: #30363d;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Fira Code', monospace; background-color: var(--bg); color: var(--text); }
+
+.navbar { display: flex; justify-content: space-between; padding: 20px 40px; background: var(--card-bg); border-bottom: 1px solid var(--border); }
+.logo { font-size: 20px; font-weight: 600; color: var(--primary); }
+.logo::before { content: "> "; }
+.logo::after { content: "_"; animation: blink 1s step-end infinite; }
+@keyframes blink { 50% { opacity: 0; } }
+.nav-links { list-style: none; display: flex; gap: 20px; }
+.nav-links a { color: var(--text); text-decoration: none; font-size: 14px; transition: color 0.2s; }
+.nav-links a:hover { color: var(--primary); text-shadow: 0 0 5px var(--primary); }
+
+.dashboard { padding: 40px; max-width: 1200px; margin: 0 auto; }
+.welcome-section { margin-bottom: 40px; }
+.welcome-section h1 { font-size: 28px; font-weight: 600; color: white; margin-bottom: 10px; }
+.welcome-section p { font-size: 14px; color: #8b949e; }
+
+.course-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px; }
+.course-card { background: var(--card-bg); border: 1px solid var(--border); border-radius: 6px; transition: 0.3s; position: relative; overflow: hidden; }
+.course-card:hover { border-color: var(--primary); box-shadow: 0 0 15px rgba(57, 211, 83, 0.2); }
+.course-card::before { content: ''; position: absolute; top: 0; left: 0; width: 4px; height: 100%; background: var(--primary); opacity: 0; transition: 0.3s; }
+.course-card:hover::before { opacity: 1; }
+.course-image { height: 150px; background: #010409; display: flex; align-items: center; justify-content: center; font-size: 40px; color: var(--border); }
+.course-image::after { content: '{...}'; }
+.course-info { padding: 25px; }
+.course-info h3 { font-size: 18px; font-weight: 600; margin-bottom: 15px; color: white; }
+.progress-bar { background: var(--border); height: 4px; margin-bottom: 25px; position: relative; }
+.progress { background: var(--primary); height: 100%; box-shadow: 0 0 10px var(--primary); }
+.continue-btn { width: 100%; padding: 12px; background: transparent; color: var(--primary); border: 1px solid var(--primary); font-family: 'Fira Code', monospace; font-size: 14px; cursor: pointer; transition: 0.3s; }
+.continue-btn:hover { background: rgba(57, 211, 83, 0.1); text-shadow: 0 0 5px var(--primary); }

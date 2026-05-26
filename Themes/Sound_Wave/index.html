@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sound Wave | Music & Tour</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="bg-overlay"></div>
+    
+    <header>
+        <div class="logo">SOUND WAVE</div>
+        <nav>
+            <a href="#music">Music</a>
+            <a href="#tour">Tour Dates</a>
+            <a href="#merch">Merch</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>ECHOES IN THE DARK</h1>
+            <p>The new album out now.</p>
+            <button class="btn">Listen Now</button>
+        </section>
+
+        <section id="music" class="player-section">
+            <div class="audio-player">
+                <div class="track-info">
+                    <div class="cover"></div>
+                    <div class="details">
+                        <h3>Midnight Drive</h3>
+                        <p>Sound Wave</p>
+                    </div>
+                </div>
+                <div class="controls">
+                    <button class="ctrl-btn">⏮</button>
+                    <button class="ctrl-btn play-btn" id="play-pause">▶</button>
+                    <button class="ctrl-btn">⏭</button>
+                </div>
+                <div class="progress-container">
+                    <span class="time">0:00</span>
+                    <div class="progress-bar"><div class="progress" id="progress"></div></div>
+                    <span class="time">3:45</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="tour" class="tour-section">
+            <h2>Upcoming Shows</h2>
+            <ul class="tour-list">
+                <li class="tour-item">
+                    <div class="date">Oct 15</div>
+                    <div class="venue">The Grand Roxy</div>
+                    <div class="location">Los Angeles, CA</div>
+                    <button class="ticket-btn">Tickets</button>
+                </li>
+                <li class="tour-item">
+                    <div class="date">Oct 18</div>
+                    <div class="venue">Neon Lounge</div>
+                    <div class="location">San Francisco, CA</div>
+                    <button class="ticket-btn">Tickets</button>
+                </li>
+                <li class="tour-item">
+                    <div class="date">Oct 22</div>
+                    <div class="venue">Underground Studio</div>
+                    <div class="location">Portland, OR</div>
+                    <button class="ticket-btn">Sold Out</button>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iron Ink | Tattoo Studio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">IRON INK</div>
+        <nav>
+            <a href="#artists">Artists</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#booking" class="book-btn">Book Now</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1>Leave Your Mark.</h1>
+                <p>Custom designs. Professional artists. Unforgettable ink.</p>
+            </div>
+        </section>
+
+        <section id="artists" class="artists-section">
+            <h2 class="section-title">Meet The Artists</h2>
+            <div class="artist-cards">
+                <div class="artist-card">
+                    <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&auto=format&fit=crop" alt="Artist 1">
+                    <div class="artist-info">
+                        <h3>Viper</h3>
+                        <p>Specialty: Traditional & Neo-Traditional</p>
+                    </div>
+                </div>
+                <div class="artist-card">
+                    <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&auto=format&fit=crop" alt="Artist 2">
+                    <div class="artist-info">
+                        <h3>Jax</h3>
+                        <p>Specialty: Black & Grey Realism</p>
+                    </div>
+                </div>
+                <div class="artist-card">
+                    <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=400&auto=format&fit=crop" alt="Artist 3">
+                    <div class="artist-info">
+                        <h3>Luna</h3>
+                        <p>Specialty: Fine Line & Minimalist</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="booking" class="booking-section">
+            <div class="booking-container">
+                <h2 class="section-title">Request a Consultation</h2>
+                <form id="booking-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="artist">Preferred Artist</label>
+                        <select id="artist">
+                            <option value="any">No Preference</option>
+                            <option value="viper">Viper</option>
+                            <option value="jax">Jax</option>
+                            <option value="luna">Luna</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="description">Tattoo Description & Placement</label>
+                        <textarea id="description" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Request</button>
+                    <p id="form-msg" class="msg"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

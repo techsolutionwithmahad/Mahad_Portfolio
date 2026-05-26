@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ledger Pro | Accounting</title>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="sidebar">
+    <div class="logo">LedgerPro</div>
+    <nav>
+      <a href="#" class="active">Dashboard</a>
+      <a href="#">Services</a>
+      <a href="#">Tax Planning</a>
+      <a href="#">Audit</a>
+    </nav>
+  </div>
+  <main class="content">
+    <header>
+      <h1>Financial Overview</h1>
+      <button class="btn">Client Portal</button>
+    </header>
+    <div class="grid">
+      <div class="card stat">
+        <h3>Tax Compliance</h3>
+        <p class="value">100%</p>
+      </div>
+      <div class="card stat">
+        <h3>Capital Growth</h3>
+        <p class="value">+14.2%</p>
+      </div>
+      <div class="card table-container">
+        <h3>Recent Audits</h3>
+        <table>
+          <tr><th>Company</th><th>Date</th><th>Status</th></tr>
+          <tr><td>Acme Corp</td><td>Oct 12</td><td><span class="status ok">Clear</span></td></tr>
+          <tr><td>Global Tech</td><td>Oct 10</td><td><span class="status ok">Clear</span></td></tr>
+          <tr><td>Startup Inc</td><td>Oct 08</td><td><span class="status pending">Review</span></td></tr>
+        </table>
+      </div>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

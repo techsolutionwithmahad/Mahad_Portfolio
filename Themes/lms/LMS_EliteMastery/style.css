@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Montserrat:wght@300;400;600&display=swap');
+
+:root {
+    --bg: #050505;
+    --primary: #D4AF37;
+    --text: #ffffff;
+    --card-bg: #111111;
+    --border: #333333;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Montserrat', sans-serif; background-color: var(--bg); color: var(--text); }
+
+.navbar { display: flex; justify-content: space-between; padding: 30px 60px; background: transparent; border-bottom: 1px solid var(--border); }
+.logo { font-family: 'Cinzel', serif; font-size: 28px; font-weight: 700; color: var(--primary); letter-spacing: 4px; text-transform: uppercase; }
+.nav-links { list-style: none; display: flex; gap: 40px; align-items: center; }
+.nav-links a { color: #cccccc; text-decoration: none; font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 2px; transition: color 0.3s; }
+.nav-links a:hover { color: var(--primary); }
+
+.dashboard { padding: 80px 60px; max-width: 1400px; margin: 0 auto; }
+.welcome-section { text-align: center; margin-bottom: 80px; }
+.welcome-section h1 { font-family: 'Cinzel', serif; font-size: 48px; color: white; margin-bottom: 20px; letter-spacing: 2px; font-weight: 500; }
+.welcome-section p { font-size: 16px; color: #999; font-weight: 300; letter-spacing: 1px; }
+
+.course-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 50px; }
+.course-card { background: var(--card-bg); transition: 0.4s; position: relative; border: 1px solid var(--border); overflow: hidden; }
+.course-card:hover { border-color: var(--primary); box-shadow: 0 20px 40px rgba(0,0,0,0.5); transform: translateY(-5px); }
+.course-image { height: 250px; background-size: cover; background-position: center; position: relative; }
+.course-image::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17,1) 100%); }
+.course-card:nth-child(1) .course-image { background-image: url('https://images.unsplash.com/photo-1542204165-65bf26472b9b?auto=format&fit=crop&w=600&q=80'); }
+.course-card:nth-child(2) .course-image { background-image: url('https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&w=600&q=80'); }
+.course-card:nth-child(3) .course-image { background-image: url('https://images.unsplash.com/photo-1493225457124-a1a2a5ea3a0e?auto=format&fit=crop&w=600&q=80'); }
+
+.course-info { padding: 30px; position: relative; z-index: 2; margin-top: -50px; }
+.course-info h3 { font-family: 'Cinzel', serif; font-size: 24px; margin-bottom: 20px; color: var(--primary); font-weight: 500; letter-spacing: 1px; }
+.progress-bar { background: var(--border); height: 2px; margin-bottom: 30px; }
+.progress { background: var(--primary); height: 100%; }
+.continue-btn { width: 100%; padding: 15px; background: transparent; color: white; border: 1px solid var(--primary); font-family: 'Montserrat', sans-serif; font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 2px; cursor: pointer; transition: 0.3s; }
+.continue-btn:hover { background: var(--primary); color: var(--bg); }

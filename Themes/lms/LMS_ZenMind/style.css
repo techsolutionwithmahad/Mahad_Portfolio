@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Outfit:wght@300;400;500&display=swap');
+
+:root {
+    --bg: #F5F5DC;
+    --primary: #9DC183;
+    --secondary: #E2725B;
+    --text: #4A4A4A;
+    --card-bg: #FCFCFA;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Outfit', sans-serif; background-color: var(--bg); color: var(--text); }
+
+.navbar { display: flex; justify-content: space-between; padding: 25px 50px; background: var(--card-bg); box-shadow: 0 4px 20px rgba(0,0,0,0.02); }
+.logo { font-family: 'Lora', serif; font-size: 26px; font-weight: 600; color: var(--primary); letter-spacing: 1px; }
+.nav-links { list-style: none; display: flex; gap: 40px; align-items: center; }
+.nav-links a { color: var(--text); text-decoration: none; font-size: 16px; font-weight: 400; transition: color 0.3s; }
+.nav-links a:hover { color: var(--secondary); }
+
+.dashboard { padding: 60px 40px; max-width: 1100px; margin: 0 auto; }
+.welcome-section { text-align: center; margin-bottom: 60px; }
+.welcome-section h1 { font-family: 'Lora', serif; font-size: 40px; color: var(--primary); margin-bottom: 15px; font-weight: 400; }
+.welcome-section p { font-size: 18px; color: #777; font-weight: 300; }
+
+.course-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 40px; }
+.course-card { background: var(--card-bg); border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.03); transition: 0.4s; overflow: hidden; }
+.course-card:hover { transform: translateY(-5px); box-shadow: 0 15px 40px rgba(0,0,0,0.06); }
+.course-image { height: 220px; background: #E8E8D8; position: relative; }
+.course-image::after { content: '🌿'; font-size: 50px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); opacity: 0.7; }
+.course-card:nth-child(2) .course-image::after { content: '🧘'; }
+.course-card:nth-child(3) .course-image::after { content: '🍵'; }
+
+.course-info { padding: 30px; }
+.course-info h3 { font-family: 'Lora', serif; font-size: 22px; margin-bottom: 15px; color: var(--text); font-weight: 600; }
+.progress-bar { background: #EAEAE0; height: 6px; border-radius: 3px; margin-bottom: 25px; }
+.progress { background: var(--primary); height: 100%; border-radius: 3px; }
+.continue-btn { width: auto; padding: 12px 30px; background: var(--card-bg); color: var(--primary); border: 1px solid var(--primary); border-radius: 30px; font-family: 'Outfit', sans-serif; font-size: 15px; font-weight: 500; cursor: pointer; transition: 0.3s; }
+.continue-btn:hover { background: var(--primary); color: white; }

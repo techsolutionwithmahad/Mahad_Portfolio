@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Design | Interior Decorator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">Space.</div>
+        <nav>
+            <a href="#">Portfolio</a>
+            <a href="#">Services</a>
+            <a href="#">Journal</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Elevating<br>Everyday <i>Spaces</i></h1>
+                <p>We transform houses into homes with structured, elegant, and timeless interior design solutions.</p>
+                <a href="#transformations" class="cta-link">View Transformations</a>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=800&auto=format&fit=crop" alt="Interior Design">
+            </div>
+        </section>
+
+        <section id="transformations" class="before-after-section">
+            <div class="section-header">
+                <h2>The Art of Transformation</h2>
+                <p>Drag the slider to see the difference.</p>
+            </div>
+            
+            <div class="slider-container">
+                <div class="image-wrapper before">
+                    <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?w=1000&auto=format&fit=crop" alt="Before">
+                    <span class="label label-before">Before</span>
+                </div>
+                <div class="image-wrapper after">
+                    <img src="https://images.unsplash.com/photo-1600607687985-ce2bf33cb030?w=1000&auto=format&fit=crop" alt="After">
+                    <span class="label label-after">After</span>
+                </div>
+                <div class="slider-handle"></div>
+                <input type="range" min="0" max="100" value="50" class="slider" id="compare-slider">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Space Design. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

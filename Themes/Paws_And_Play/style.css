@@ -1,0 +1,21 @@
+:root { --pink: #ff99c8; --blue: #a9def9; --yellow: #fcf6bd; --purple: #e4c1f9; --text: #4a4a4a; }
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Varela Round', sans-serif; color: var(--text); background: #fffafb; }
+h1, .logo, .bubble { font-family: 'Fredoka One', cursive; }
+header { display: flex; justify-content: space-between; align-items: center; padding: 1.5rem 5%; background: white; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border-radius: 0 0 30px 30px; }
+.logo { font-size: 2rem; color: #ff6b6b; }
+nav a { margin: 0 1rem; font-weight: bold; cursor: pointer; color: var(--text); }
+nav a:hover { color: #ff6b6b; }
+.cart-btn { background: var(--purple); border: none; padding: 0.8rem 1.5rem; border-radius: 20px; font-weight: bold; font-family: 'Varela Round'; cursor: pointer; box-shadow: 0 4px 0 #cda4e8; transition: transform 0.1s; }
+.cart-btn:active { transform: translateY(4px); box-shadow: none; }
+.hero { text-align: center; padding: 6rem 2rem; }
+.hero h1 { font-size: 4rem; color: #4ecdc4; margin-bottom: 1rem; }
+.hero p { font-size: 1.5rem; color: #666; margin-bottom: 3rem; }
+.btn { background: #ff6b6b; color: white; border: none; padding: 1rem 2.5rem; font-size: 1.2rem; font-family: 'Fredoka One'; border-radius: 30px; cursor: pointer; box-shadow: 0 6px 0 #d63031; transition: transform 0.1s; }
+.btn:active { transform: translateY(6px); box-shadow: none; }
+.categories { display: flex; justify-content: center; gap: 3rem; padding: 2rem; }
+.bubble { width: 150px; height: 150px; border-radius: 50%; display: flex; align-items: center; justify-content: center; text-align: center; font-size: 1.5rem; color: var(--text); cursor: pointer; transition: transform 0.3s; box-shadow: 0 10px 20px rgba(0,0,0,0.1); line-height: 1.2; }
+.bubble:hover { transform: scale(1.1) rotate(5deg); }
+.bg-pink { background: var(--pink); }
+.bg-blue { background: var(--blue); }
+.bg-yellow { background: var(--yellow); }

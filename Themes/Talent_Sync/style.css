@@ -1,0 +1,22 @@
+:root { --primary: #00b4d8; --secondary: #0077b6; --bg: #f8f9fa; --text: #2b2d42; }
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Nunito', sans-serif; background: var(--bg); color: var(--text); }
+header { display: flex; justify-content: space-between; align-items: center; padding: 1rem 4rem; background: white; box-shadow: 0 2px 10px rgba(0,0,0,0.05); position: sticky; top: 0; }
+.logo { font-size: 1.5rem; font-weight: 800; color: var(--secondary); }
+.search-bar input { padding: 0.8rem 1.5rem; border-radius: 20px; border: 1px solid #ddd; width: 300px; font-family: 'Nunito'; outline: none; }
+.search-bar input:focus { border-color: var(--primary); }
+.btn { background: var(--primary); color: white; border: none; padding: 0.8rem 1.5rem; border-radius: 20px; font-weight: 600; cursor: pointer; transition: background 0.3s; }
+.btn:hover { background: var(--secondary); }
+.hero { text-align: center; padding: 4rem 2rem; background: linear-gradient(135deg, #e0fbfc, #caf0f8); }
+.hero h1 { font-size: 3rem; margin-bottom: 1rem; color: var(--secondary); }
+.job-board { display: flex; padding: 4rem; max-width: 1200px; margin: 0 auto; gap: 2rem; }
+.filters { width: 250px; background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); align-self: start; }
+.filters h3 { margin-bottom: 1rem; }
+.filters label { display: block; margin-bottom: 0.5rem; color: #555; cursor: pointer; }
+.job-list { flex: 1; display: flex; flex-direction: column; gap: 1rem; }
+.job-card { background: white; padding: 1.5rem 2rem; border-radius: 12px; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 4px 6px rgba(0,0,0,0.05); transition: transform 0.2s; }
+.job-card:hover { transform: translateY(-2px); box-shadow: 0 6px 12px rgba(0,0,0,0.1); }
+.job-info h4 { font-size: 1.2rem; margin-bottom: 0.2rem; }
+.job-info p { color: #888; font-size: 0.9rem; }
+.btn-outline { border: 2px solid var(--primary); color: var(--primary); background: transparent; padding: 0.5rem 1rem; border-radius: 15px; cursor: pointer; font-weight: 600; transition: all 0.3s; }
+.btn-outline:hover { background: var(--primary); color: white; }

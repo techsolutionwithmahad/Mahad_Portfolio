@@ -1,0 +1,22 @@
+:root { --bg: #f4f4f4; --text: #222; --accent: #e60000; }
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Roboto', sans-serif; background: var(--bg); color: var(--text); }
+header { background: #111; color: #fff; display: flex; justify-content: space-between; padding: 1.5rem 3rem; align-items: center; }
+.logo { font-size: 1.8rem; font-weight: 900; letter-spacing: 1px; }
+nav a { margin-left: 2rem; font-weight: 700; text-transform: uppercase; cursor: pointer; transition: color 0.2s; }
+nav a:hover { color: var(--accent); }
+.hero { height: 60vh; background: url('https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&q=80') center/cover; display: flex; align-items: flex-end; justify-content: center; padding-bottom: 0; }
+.search-panel { background: rgba(255,255,255,0.95); padding: 2rem; width: 80%; transform: translateY(50%); box-shadow: 0 10px 30px rgba(0,0,0,0.1); border-radius: 8px; }
+.search-panel h2 { margin-bottom: 1.5rem; text-align: center; font-weight: 900; }
+.filters { display: flex; gap: 1rem; }
+select { flex: 1; padding: 1rem; border: 1px solid #ccc; border-radius: 4px; font-family: 'Roboto'; font-size: 1rem; outline: none; }
+.btn { background: var(--accent); color: white; border: none; padding: 1rem 2rem; border-radius: 4px; font-weight: 700; font-size: 1rem; cursor: pointer; text-transform: uppercase; }
+.btn:hover { background: #cc0000; }
+.inventory { padding: 10rem 10% 5rem; display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 3rem; }
+.car-card { background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.05); transition: transform 0.3s; }
+.car-card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
+.car-card .img { height: 250px; background-size: cover; background-position: center; }
+.info { padding: 1.5rem; }
+.info h3 { font-size: 1.3rem; margin-bottom: 0.5rem; font-weight: 900; }
+.specs { color: #666; font-size: 0.9rem; margin-bottom: 1rem; }
+.price { font-size: 1.5rem; font-weight: 900; color: var(--accent); }

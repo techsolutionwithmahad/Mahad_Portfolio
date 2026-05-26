@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rest Easy | Hotel & Resort</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">REST EASY</div>
+        <nav>
+            <a href="#">Rooms</a>
+            <a href="#">Amenities</a>
+            <a href="#">Dining</a>
+        </nav>
+        <div class="lang">EN</div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-bg"></div>
+            <div class="hero-content">
+                <h1>Experience Pure Luxury</h1>
+                <p>Your sanctuary of elegance and tranquility awaits.</p>
+            </div>
+            
+            <div class="booking-widget">
+                <form id="booking-form">
+                    <div class="input-group">
+                        <label>Check In</label>
+                        <input type="date" required>
+                    </div>
+                    <div class="input-group">
+                        <label>Check Out</label>
+                        <input type="date" required>
+                    </div>
+                    <div class="input-group">
+                        <label>Guests</label>
+                        <select>
+                            <option>1 Adult</option>
+                            <option selected>2 Adults</option>
+                            <option>Family (4)</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="check-btn">Check Availability</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="rooms">
+            <div class="section-header">
+                <h2>Our Suites</h2>
+                <p>Designed for comfort, crafted for luxury.</p>
+            </div>
+            
+            <div class="room-gallery">
+                <div class="room-item">
+                    <img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=600&auto=format&fit=crop" alt="Deluxe Room">
+                    <div class="room-info">
+                        <h3>Ocean View Suite</h3>
+                        <p>From $350 / night</p>
+                    </div>
+                </div>
+                <div class="room-item">
+                    <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=600&auto=format&fit=crop" alt="Penthouse">
+                    <div class="room-info">
+                        <h3>The Penthouse</h3>
+                        <p>From $850 / night</p>
+                    </div>
+                </div>
+                <div class="room-item">
+                    <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?w=600&auto=format&fit=crop" alt="Standard Room">
+                    <div class="room-info">
+                        <h3>Garden Villa</h3>
+                        <p>From $450 / night</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
